@@ -57,6 +57,7 @@ export default defineConfig({
     },
   },
   plugins: [react()],
+  base: "/h5_long/",
   build: {
     cssCodeSplit: false,
     assetsInlineLimit: 10 * 1024,
