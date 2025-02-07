@@ -25,6 +25,7 @@ const addResourcesToCache = async (resources: string[]) => {
 };
 
 self.addEventListener("install", (event) => {
+  console.log('install', event)
   if (!hasWaitUntil(event)) {
     return;
   }
@@ -50,7 +51,7 @@ const enableNavigationPreload = async () => {
 
 self.addEventListener('activate', (event) => {
   console.log('self', self)
-
+  console.log('activate', event)
   if (!hasWaitUntil(event)) {
     return;
   }
@@ -59,5 +60,5 @@ self.addEventListener('activate', (event) => {
 
 
 self.addEventListener('fetch', (event) => {
-
+  console.log('fetch', event)
 });
