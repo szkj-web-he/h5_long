@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "DINPro";
+  src: url("./assets/fonts/DINPro-Medium.otf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "DINPro";
+  src: url("./assets/fonts/DINPro-Black.otf");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "DINPro";
+  src: url("./assets/fonts/DINPro-Bold.otf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "DINPro";
+  src: url("./assets/fonts/DINPro-Bold.otf");
+  font-weight: 700;
+}
+
+.hidden {
+  display: none;
+}
+
+html {
+  touch-action: none;
+}
